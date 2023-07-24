@@ -70,8 +70,11 @@ function handleResize(first = false) {
     rainContainer.style.height = diagonal + 'px'
 
     if (mobileCheck() == true) {
-        card.style.transform = 'scale(0.65)'
+        card.style.transform = 'scale(1.7)'
         card.style.maxWidth = '140vw'
+
+        document.body.style.height = '100dvh'
+        document.body.style.width = '100dvw'
     } else {
         if (window.innerWidth > 1130) {
             card.style.transform = 'scale(1)'
