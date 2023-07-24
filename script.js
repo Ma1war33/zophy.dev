@@ -64,6 +64,11 @@ function mobileCheck() {
 };
 
 function handleResize(first = false) {
+    diagonal = Math.sqrt(window.innerHeight ** 2 + window.innerWidth ** 2)
+
+    rainContainer.style.width = diagonal + 'px'
+    rainContainer.style.height = diagonal + 'px'
+
     if (mobileCheck() == true) {
         card.style.transform = 'scale(0.65)'
         card.style.maxWidth = '140vw'

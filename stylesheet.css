@@ -39,6 +39,28 @@ body {
     overflow: hidden;
 }
 
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, max-content));
+    justify-content: center;
+}
+
+.card-wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
 .card {
     background-color: rgb(131, 131, 131);
     position: relative;
@@ -229,16 +251,17 @@ svg {
 
 
 .rain-container {
-    position: absolute;
-    top: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 
-    transform: rotate(20deg) scale(1.6);
+    transform: rotate(20deg) scale(1.4);
     transition: opacity 1s;
 
     z-index: 1;
+
+    grid-column: 1;
+    grid-row: 1;
 }
 
 i {
