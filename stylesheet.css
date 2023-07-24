@@ -35,8 +35,13 @@ body {
     }
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 .card {
     background-color: rgb(131, 131, 131);
+    position: relative;
 
     height: 45rem;
     width: 40rem;
@@ -232,6 +237,8 @@ svg {
 
     transform: rotate(20deg) scale(1.6);
     transition: opacity 1s;
+
+    z-index: 1;
 }
 
 i {
