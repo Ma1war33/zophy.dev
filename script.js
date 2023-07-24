@@ -70,7 +70,7 @@ function handleResize(first = false) {
     rainContainer.style.height = diagonal + 'px'
 
     if (mobileCheck() == true) {
-        card.style.transform = 'scale(1.7)'
+        card.style.transform = 'scale(1.4)'
         card.style.maxWidth = '140vw'
 
         document.body.style.height = '100dvh'
