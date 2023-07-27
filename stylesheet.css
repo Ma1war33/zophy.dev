@@ -280,3 +280,15 @@ i {
         transform: translateY(calc(100vh + 120px));
     }
 }
+
+.song {
+    line-height: 1em;
+
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+.spotifyembed {
+    margin-bottom: -4.5em;
+    filter: saturate(0)
+}
