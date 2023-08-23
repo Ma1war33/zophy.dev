@@ -100,8 +100,8 @@ function handleResize(first = false) {
         card.style.transform = 'scale(1.4)'
         card.style.maxWidth = '140vw'
 
-        Gcard.style.maxWidth = 'scale(1.4)'
-        Gcard.style.maxHeight = '140vw'
+        Gcard.style.transform = 'scale(1.4)'
+        Gcard.style.maxWidth = '140vw'
 
         document.body.style.height = '100dvh'
         document.body.style.width = '100dvw'
