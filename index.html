@@ -16,7 +16,8 @@
             <div class="card">
                 <div class="left">
                     <h1 class="name">Zophy</h1>
-                    <p class="desc">17 y/o, United Kingdom<br>he/him</p>
+                    <p class="desc">17 y/o ~ United Kingdom<br><span style="font-size: 0.9em;">he/him ~ they/them</span>
+                    </p>
                     <p>----------------------------</p>
                     <div>
                         <div>
@@ -29,12 +30,12 @@
                     </div>
                     <div>
                         <div>
-                            <p class="text"><span class="title">Interests:</span> Programming, videogames, light novels,
-                                design
+                            <p class="text"><span class="title">Interests:</span> Programming, 3D modelling, videogames,
+                                light novels, and design
                             </p>
                         </div>
                     </div>
-                    <div class="gallery">
+                    <div class="card-gallery">
                         <img src="tanya1.png" class="img">
                         <img src="tanya2.png" class="img">
                         <img src="tanya3.png" class="img">
@@ -44,9 +45,8 @@
                             d="M36.3,32.1c-2.6,0.7-5.5-0.9-6.8-3.5l-2.9-6.2H20h-6.6l-2.9,6.2c-1.2,2.6-4.1,4.2-6.8,3.5 c-2.6-0.7-4.2-3.4-3.5-6L2,19.3C2,19.2,2,19.1,2.1,19l1.5-5.8c0.8-3,3.9-5.4,6.9-5.4H20h9.5c3,0,6.1,2.4,6.9,5.4l1.5,5.8 c0,0.1,0.1,0.2,0.1,0.3l1.8,6.8C40.5,28.7,39,31.4,36.3,32.1z M16.2,15c0-0.5-0.4-0.9-0.9-0.9h-2.5v-2.5c0-0.5-0.4-0.9-0.9-0.9H11 c-0.5,0-0.9,0.4-0.9,0.9v2.5H7.5c-0.5,0-0.9,0.4-0.9,0.9v0.8c0,0.5,0.4,0.9,0.9,0.9h2.6v2.6c0,0.5,0.4,0.9,0.9,0.9h0.8 c0.5,0,0.9-0.4,0.9-0.9v-2.6h2.5c0.5,0,0.9-0.4,0.9-0.9V15z M25.4,13.8c-0.9,0-1.7,0.7-1.7,1.7s0.7,1.7,1.7,1.7 c0.9,0,1.7-0.7,1.7-1.7S26.3,13.8,25.4,13.8z M28.7,10.5c-0.9,0-1.7,0.7-1.7,1.7c0,0.9,0.7,1.7,1.7,1.7c0.9,0,1.7-0.7,1.7-1.7 C30.3,11.2,29.6,10.5,28.7,10.5z M28.7,17c-0.9,0-1.7,0.7-1.7,1.7c0,0.9,0.7,1.7,1.7,1.7c0.9,0,1.7-0.7,1.7-1.7 C30.3,17.8,29.6,17,28.7,17z M31.9,13.8c-0.9,0-1.7,0.7-1.7,1.7s0.7,1.7,1.7,1.7c0.9,0,1.7-0.7,1.7-1.7S32.9,13.8,31.9,13.8z">
                         </path>
                     </svg>
-                    <p class="text playing"><span class="title">Playing:</span> Valorant, VRChat, Zelda TOTK, Minecraft,
-                        Honkai,
-                        Cyberpunk, GTA
+                    <p class="text playing"><span class="title">Playing:</span> VRChat, Zelda TOTK, Minecraft,
+                        Honkai, Cyberpunk, GTA
                     </p>
                 </div>
                 <div class="right">
@@ -90,11 +90,46 @@
                         </div>
                     </div>
                 </div>
-
+                <div>
+                    <div class="disableraindiv">
+                        <p>Disable Animations</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="gallery-hover"></div>
+        </div>
+        <div class="gallery-wrapper">
+            <div class="card gcard">
+                <div class="gallery">
+                    <div class="page-wrapper"></div>
+                </div>
+                <div class="menu">
+                    <div> <span class="back-btn">
+                            &lt
+                        </span>
+                        <span class="page-no">0/0</span>
+                        <span class="next-btn">
+                            &gt
+                        </span>
+                    </div>
+                    <p>Click to see fullscreen image</p>
+                </div>
+            </div>
+            <div class="card-hover"></div>
         </div>
         <div class="rain-container"></div>
+        <div id="particles-js"></div>
+        <div class="crash-pop-up" style="display: none;">
+            <div>
+                <h1>Crashing?</h1>
+                <p style="width:18rem;padding-top: 1rem;">Complex animations sometimes cause browsers to crash, try
+                    disabling them?</p>
+                <div class="crash-btn-wrapper"><span>Yes</span><span>No</span></div>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 

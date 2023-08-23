@@ -15,6 +15,8 @@ body {
 
     animation: fade-in 3s 0s forwards cubic-bezier(0, 1, .63, 1.01);
     opacity: 0;
+
+    transition: background-color 1s;
 }
 
 *::selection {
@@ -55,10 +57,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     grid-column: 1;
     grid-row: 1;
 
+    z-index: 2;
+
+    transition: transform 0s;
 }
 
 .card {
@@ -160,7 +166,7 @@ a:hover {
     display: inline-block;
 }
 
-.gallery {
+.card-gallery {
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -290,5 +296,233 @@ i {
 
 .spotifyembed {
     margin-bottom: -4.5em;
-    filter: saturate(0)
+    filter: saturate(0);
+
+    opacity: 0;
+    animation: fade-in-opacity 0.5s 0.6s forwards;
+
+}
+
+@keyframes fade-in-opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+.disableraindiv {
+    width: 15em;
+
+    text-align: center;
+    font-weight: 800;
+    color: rgb(131, 131, 131);
+    text-decoration: underline;
+
+    user-select: none;
+
+    left: 12.5em;
+    bottom: -3em;
+    position: absolute;
+
+}
+
+.gallery-hover {
+    width: 40rem;
+    height: 4em;
+    position: absolute;
+    bottom: 0;
+    left: calc(50vw - 20rem);
+
+}
+
+.gallery-wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    grid-column: 1;
+    grid-row: 1;
+
+    z-index: 2;
+
+    transform: translateY(100vh);
+    transition: transform 0s;
+
+    pointer-events: none;
+}
+
+.card-hover {
+    width: 40rem;
+    height: 4em;
+    position: absolute;
+    top: 0;
+    left: calc(50vw - 20rem);
+
+    pointer-events: all;
+}
+
+.gcard {
+    display: block;
+    position: relative;
+
+    height: 47rem;
+
+    background-color: rgb(25, 25, 25);
+    box-shadow: 4px 4px 7px 3px rgba(60, 60, 60, 0.64);
+
+    pointer-events: all;
+}
+
+.gcard .gallery {
+    width: 40rem;
+    height: 40rem;
+
+    max-width: inherit;
+
+    overflow: hidden;
+}
+
+.page-wrapper {
+    height: 40rem;
+    width: 1000rem;
+
+    display: flex;
+    align-items: center;
+
+    transition: transform 0.75s;
+}
+
+.gcard .gallery .page {
+    width: 40rem;
+    height: 40rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    max-width: inherit;
+
+
+}
+
+.gcard .gallery .page .image {
+    width: 20rem;
+    height: 20rem;
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.gcard .gallery .page .image h2 {
+    font-family: Off White;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: white;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    display: block;
+    opacity: 0;
+
+    transition: opacity 1s;
+
+}
+
+.gcard .menu {
+    width: 40rem;
+    height: calc(100% - 40rem);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gcard .menu p {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: rgb(197, 197, 197);
+
+    line-height: 0;
+    margin-top: 1.7rem;
+}
+
+.gcard .menu span {
+    padding: 0.7em;
+
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: white;
+
+    user-select: none;
+
+}
+
+.back-btn:hover,
+.next-btn:hover {
+    background-color: rgb(76, 76, 76);
+}
+
+.back-btn:active,
+.next-btn:active {
+    background-color: rgb(60, 60, 60);
+}
+
+.crash-pop-up {
+    position: absolute;
+    width: 20rem;
+    height: 15rem;
+
+    right: 1rem;
+    bottom: 1rem;
+
+    border-radius: 2rem;
+
+    background-color: rgb(71, 71, 71);
+    z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crash-pop-up span {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    margin: 0.2rem;
+
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+    background-color: rgb(96, 96, 96);
+    border-radius: 0.5rem;
+}
+
+.crash-btn-wrapper {
+    margin-top: 2rem;
+    width: 100%;
 }

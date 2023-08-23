@@ -2,3 +2,8 @@
     font-family: 'Gunsan Script';
     src: url('Fonts/Gunsan\ Script.otf');
 }
+
+@font-face {
+    font-family: 'Off White';
+    src: url('Fonts/Off\ White.ttf');
+}
