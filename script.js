@@ -89,6 +89,9 @@ function mobileCheck() {
     return check;
 };
 
+cardHover = document.getElementsByClassName('card-hover')[0]
+galleryHover = document.getElementsByClassName('gallery-hover')[0]
+
 function handleResize(first = false) {
     diagonal = Math.sqrt(window.innerHeight ** 2 + window.innerWidth ** 2)
 
@@ -105,6 +108,9 @@ function handleResize(first = false) {
 
         document.body.style.height = '100dvh'
         document.body.style.width = '100dvw'
+
+        galleryHover.style.height = '50dvh'
+        cardHover.style.height = '50dvh'
     } else {
 
         if (window.innerWidth > 1130) {
@@ -148,7 +154,7 @@ function handleResize(first = false) {
 handleResize(true)
 
 
-galleryHover = document.getElementsByClassName('gallery-hover')[0]
+
 galleryHover.addEventListener('mouseover', () => { handleGalleryHover() })
 galleryHover.addEventListener('mousedown', () => { handleGalleryHover() })
 
@@ -192,7 +198,7 @@ function handleGalleryHover() {
     }
 }
 
-cardHover = document.getElementsByClassName('card-hover')[0]
+
 cardHover.addEventListener('mouseover', () => { handleCardHover() })
 cardHover.addEventListener('mousedown', () => { handleCardHover() })
 
